@@ -1,0 +1,7 @@
+#DirectoryIndex index.php index.html
+Options -Indexes
+AddDefaultCharset utf-8
+RewriteEngine On
+
+RewriteCond %{HTTP_USER_AGENT} ^Teleport
+RewriteRule ^.*$ - [F]
